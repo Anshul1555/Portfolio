@@ -68,4 +68,49 @@ html, body {
   .project-card a:hover {
     text-decoration: underline;
   }
-  
+  /* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-container {
+      padding: 0 2rem;
+      gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+      padding: 2rem 1.5rem;
+  }
+  .projects-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      padding: 0 1.5rem;
+  }
+  .project-card {
+      padding: 1rem;
+  }
+  .project-card h3 {
+      font-size: 1.3rem;
+  }
+  .project-card p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #projects {
+      padding: 1.5rem 1rem;
+  }
+  .projects-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 0 1rem;
+  }
+  .project-card {
+      padding: 0.8rem;
+  }
+  .project-card h3 {
+      font-size: 1.2rem;
+  }
+  .project-card p {
+      font-size: 0.85rem;
+  }
+}
