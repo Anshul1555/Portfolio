@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.footer {
+    background-color: #282727;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    position: fixed;
+    border-top: 2px solid white;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left-info{
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.email {
+    color: burlywood;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    margin-left: -350px;
+}
+
+.social-icons a img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); 
+}
+
+.number {
+    color: burlywood;
+    font-weight: 500;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    right:20px;
+    text-align: right;
+}
