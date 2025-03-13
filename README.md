@@ -24,4 +24,5 @@ The project is deployed on Netlify and can be accessed live.
 
 ## Deployed Application
 
-The portfolio is deployed on Netlify. You can view the live version of the project at:
+The portfolio is deployed on Netlify. You can view the live version of the project at: 
+https://anshul-sharma-fullstack.netlify.app/
