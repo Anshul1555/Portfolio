@@ -18,7 +18,7 @@ const projects = [
   {
     id: 3,
     title: 'Vehicle Builder',
-    description: 'A JavaScript application for configuring and customizing vehicles.',
+    description: 'A Node.js application for configuring and customizing vehicles.',
     link: 'https://github.com/Anshul1555/VehicleBuilder',
   },
   {
