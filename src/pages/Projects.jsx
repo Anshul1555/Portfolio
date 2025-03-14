@@ -33,6 +33,12 @@ const projects = [
     description: 'A financial calculator to calculate financial metrics and reports.',
     link: 'https://github.com/Anshul1555/financial-calculator.git',
   },
+  {
+    id: 6,
+    title: 'Portfolio',
+    description: 'A financial calculator to calculate financial metrics and reports.',
+    link: 'https://github.com/Anshul1555/financial-calculator.git',
+  },
 ];
 
 const Projects = () => {
