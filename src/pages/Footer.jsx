@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="contact">
                 <div className="left-info">
-                    <p className="email">EMAIL: anshulsharma9366@gmail.com</p>
+                    <p className="email">Email: anshulsharma9366@gmail.com</p>
                 </div>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/anshul1555/" target="_blank" rel="noopener noreferrer">
