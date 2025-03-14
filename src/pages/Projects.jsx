@@ -36,8 +36,8 @@ const projects = [
   {
     id: 6,
     title: 'Portfolio',
-    description: 'A financial calculator to calculate financial metrics and reports.',
-    link: 'https://github.com/Anshul1555/financial-calculator.git',
+    description: 'A Portfolio website built using react.',
+    link: 'https://github.com/Anshul1555/Portfolio',
   },
 ];
 
