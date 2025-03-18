@@ -15,7 +15,7 @@ export default function Footer() {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
                     </a>
                 </div>
-                <p className="number">Number: 4379822044</p>
+                <p className="number">4379822044</p>
             </div>
         </footer>
     );
