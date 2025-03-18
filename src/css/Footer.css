@@ -16,7 +16,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    position: fixed;
+    position:fixed;
     border-top: 2px solid white;
 }
 
@@ -64,4 +64,45 @@ html, body {
     bottom: 10px;
     right:20px;
     text-align: right;
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 12px;
+        padding: 1rem;
+        position: relative;
+    }
+
+    /* Stack content vertically in the contact section */
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Stack the social icons vertically */
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Adjust email and number font size and alignment */
+    .email, .number {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .number {
+        text-align: center; /* Center the phone number */
+        margin-top: 5px; /* Reduced top margin for better spacing */
+        position: static; /* Remove absolute positioning */
+    }
 }

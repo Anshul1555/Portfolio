@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="contact">
                 <div className="left-info">
-                    <p className="email">EMAIL: anshulsharma9366@gmail.com</p>
+                    <p className="email">anshulsharma9366@gmail.com</p>
                 </div>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/anshul1555/" target="_blank" rel="noopener noreferrer">
@@ -15,7 +15,7 @@ export default function Footer() {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
                     </a>
                 </div>
-                <p className="number">4379822044</p>
+                <p className="number">+1 (437) 982 2044</p>
             </div>
         </footer>
     );

@@ -13,3 +13,20 @@
     font-size: 1.2rem;
   }
 
+  @media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .nav-link {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}

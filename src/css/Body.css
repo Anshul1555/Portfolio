@@ -38,5 +38,24 @@ html, body {
     text-align: center;
     margin-top: auto; 
     margin-bottom: 0; 
-    border-bottom: 3px solid aqua; 
+    
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .home-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-section p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    #portfolio {
+        padding: 1rem 1rem;
+    }
 }

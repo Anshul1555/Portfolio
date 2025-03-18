@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 10px;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -14,11 +14,11 @@ h1 {
 .about-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 10px;
   gap: 30px;
   width: 100%;
-  max-width: 1850px;  
+  max-width: 1850px;
   border: 2px solid #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -35,26 +35,26 @@ h1 {
   box-sizing: border-box;
   max-width: 100%;
   word-wrap: break-word;
+  line-height: 1.6;
 }
 
 .about-image {
   flex: 1;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .profile-pic {
   width: 100%;
-  max-width: 400px;  
+  max-width: 400px;
   height: auto;
   max-height: 45vh;
   object-fit: cover;
   border: 4px solid #007bff;
   object-position: center -80px;
 }
-
 
 @media (max-width: 768px) {
   .about-content {
@@ -65,11 +65,15 @@ h1 {
 
   .about-text {
     width: 100%;
+    text-align: justify;
   }
 
+  .about-image,
   .profile-pic {
-    width: 150px;
-    height: 150px;
-    max-width: 150px;  
+    display: none;
+  }
+
+  .about {
+    padding-bottom: 10px;
   }
 }
