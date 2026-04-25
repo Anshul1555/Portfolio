@@ -1,34 +1,120 @@
-/* Header and Footer styling  */
+/* ===== HEADER ===== */
 .header {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #020405; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: var(--space-xl) var(--space-lg);
+  background: linear-gradient(135deg, #0c0c24 0%, #141432 40%, #1a0a2e 70%, #0a0a1a 100%);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-glass);
 }
 
-/* Name styling */
+/* Animated glow orb behind the header */
+.header-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 212, 255, 0.12) 0%,
+    rgba(168, 85, 247, 0.08) 40%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  pointer-events: none;
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Gradient line at the bottom */
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  opacity: 0.7;
+}
+
+/* Layout: badge + text side by side */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.7s var(--ease-out) both;
+}
+
+/* Initials badge */
+.header-badge {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.25);
+  animation: float 4s ease-in-out infinite;
+}
+
+.header-text {
+  text-align: left;
+}
+
+/* Name — gradient text */
 .name {
-    color: rgb(240, 240, 240);
-    font-weight: bold;
-    font-size: 52px;
-    margin-bottom: 0;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 2px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
-/* Job title */
-.title {
-    color: rgb(247, 243, 243);
-    font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 2px;
+/* Subtitle */
+.header-subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  color: var(--text-secondary);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
-@media (max-width: 480px) {
-    .name {
-        font-size: 40px;
-    }
-
-    .title {
-        font-size: 20px;
-    }
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .header {
+    padding: var(--space-lg) var(--space-md);
+  }
+  .header-content {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  .header-text {
+    text-align: center;
+  }
+  .header-badge {
+    width: 56px;
+    height: 56px;
+    font-size: 1.3rem;
+  }
+  .header-bg-glow {
+    width: 300px;
+    height: 200px;
+  }
 }

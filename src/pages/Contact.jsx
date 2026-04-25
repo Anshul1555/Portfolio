@@ -41,39 +41,52 @@ function Contact() {
     setName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
-    <div className="container text-center main-content">
+    <div className="contact-page">
       <h1>Contact Me</h1>
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-        />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          placeholder="Your Message"
-        />
-        <button type="submit">Send Message</button>
-      </form>
-      {errorMessage && (
-        <div>
+      <div className="contact-form-container">
+        <form className="form" onSubmit={handleFormSubmit}>
+          <div className="form-group">
+            <label htmlFor="contact-name">Name</label>
+            <input
+              id="contact-name"
+              value={name}
+              name="name"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Your name"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="contact-email">Email</label>
+            <input
+              id="contact-email"
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="your@email.com"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              placeholder="Write your message here..."
+            />
+          </div>
+          <button type="submit" className="submit-btn">Send Message</button>
+        </form>
+        {errorMessage && (
           <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
