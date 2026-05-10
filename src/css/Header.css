@@ -2,7 +2,7 @@
 .header {
   width: 100%;
   padding: var(--space-xl) var(--space-lg);
-  background: linear-gradient(135deg, #0c0c24 0%, #141432 40%, #1a0a2e 70%, #0a0a1a 100%);
+  background: transparent;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border-glass);
